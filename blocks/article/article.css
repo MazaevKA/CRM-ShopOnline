@@ -1,0 +1,42 @@
+.content {
+    margin-bottom: 160px;
+}
+
+.content__title {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 40px;
+}
+
+.content__text {
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.content__text:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #2D2D2D;
+    text-decoration: none;
+}
+
+.info__link::before {
+    content: url(img/keyboard_backspace.svg);
+    width: 24px;
+    height: 24px;
+}

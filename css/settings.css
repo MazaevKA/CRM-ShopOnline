@@ -1,0 +1,15 @@
+body {
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: #2D2D2D;
+}
+
+p, h1 {
+    margin: 0;
+}
+
+.container {
+    max-width: 1770px;
+    margin: 0 auto;
+}
+
