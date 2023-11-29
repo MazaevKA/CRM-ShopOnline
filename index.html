@@ -3,58 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
   <title>CRM-ShopOnline</title>
 </head>
 <body>
 
-  <h2>Добавить товар</h2>
+<div class="modal">
+  <h2 class="modal__title">Добавить товар</h2>
 
-  <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
+  <form class="modal__form form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
 
-    <fieldset>
-      <label>
-        Наименование
-        <input type="text" name="name">
-      </label>
+    <fieldset class="form__fieldset">
+      <label class="form__label" for="name">Наименование</label>
+        <input class="form__input" id="name" type="text" name="name">
 
-      <label>
-        Категория
-        <input type="text" name="category">
-      </label>
+      <label class="form__label" for="category">Категория</label>
+        <input class="form__input" id="category" type="text" name="category">
 
-      <label>
-        Единицы измерения
-        <input type="text" name="units">
-      </label>
+      <label class="form__label" for="units">Единицы измерения</label>
+        <input class="form__input" id="units" type="text" name="units">
 
-      <label>
-        Дисконт
-        <input type="checkbox">
-      </label>
+      <fieldset class="form__fieldset--discount">
 
-      <label>
-        <input type="text" disabled>
-      </label>
-     
-      <label>
-        Описание
-        <textarea cols="20" rows="2" name="description"></textarea>
-      </label>
+        <label class="form__label form__label--checkbox" for="confirm"></label>
+        <input class="form__input form__input--checkbox" id="confirm" name="confirm" type="checkbox">
 
-      <label>
-        Количество
-        <input type="number" name="count">
-      </label>
+        <label class="form__label" for="discount">Дисконт</label>
+        <input class="form__input form__input--discount" id="discount" name="discount" type="text" disabled>
 
-      <label>
-        Цена
-        <input type="number" name="price">
-      </label>
+      </fieldset>
 
-      <input type="file" accept="image/jpeg" name="image">
+      <label class="form__label" for="description">Описание</label>
+        <textarea class="form__textarea" id="description" name="description" cols="30" rows="10"></textarea>
+
+      <label class="form__label" for="amount">Количество</label>
+        <input class="form__input" name="amount" id="amount" type="text">
+
+      <label class="form__label" for="price">Цена</label>
+        <input class="form__input" id="price" name="price" type="text">
+
     </fieldset>
 
-    <button>Добавить товар</button>
+    <button class="form__button">Добавить товар</button>
   </form>
+
+  <button class="modal__close">
+    <span class="modal__close-line"></span>
+    <span class="modal__close-line"></span>
+  </button>
+</div>
+
+<script src="js/script.js"></script>
+
 </body>
 </html>
